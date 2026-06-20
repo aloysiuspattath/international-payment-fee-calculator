@@ -18,7 +18,7 @@ const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
 const template = fs.readFileSync(templatePath, 'utf8');
 
 const countries = Object.keys(config.stripe);
-const baseUrl = 'https://international-payment-fee-calculator.pages.dev'; // Replace with real domain later
+const baseUrl = 'https://payfeecalc.techfliq.com'; // Custom domain
 
 let sitemapUrls = [];
 
