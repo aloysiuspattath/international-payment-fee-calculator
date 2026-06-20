@@ -20,10 +20,13 @@ jobs:
       - name: Fetch and Update Rates
         run: node scripts/update-rates.js
 
+      - name: Rebuild SEO Pages
+        run: node scripts/build.js
+
       - name: Commit and Push changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add config.json
-          git commit -m "chore: automated rate update" || echo "No changes to commit"
+          git add config.json dist/
+          git commit -m "chore: automated rate update and rebuild" || echo "No changes to commit"
           git push
