@@ -25,8 +25,15 @@ async function updateRates() {
 
         // Update the metadata and rates
         const date = new Date();
-        const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-        config.lastUpdated = `${monthNames[date.getMonth()]} ${date.getFullYear()}`;
+        config.lastUpdated = date.toLocaleString('en-US', { 
+            month: 'long', 
+            day: 'numeric', 
+            year: 'numeric', 
+            hour: 'numeric', 
+            minute: '2-digit', 
+            timeZoneName: 'short',
+            timeZone: 'UTC'
+        });
         
         config.exchangeRates = mockRates; // Replace with `rates` if using real API
 
