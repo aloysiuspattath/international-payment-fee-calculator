@@ -10,7 +10,7 @@ if (!fs.existsSync(distPath)) {
 }
 
 // Copy assets
-['styles.css', 'script.js', 'config.json'].forEach(file => {
+['styles.css', 'script.js', 'config.json', 'favicon.svg'].forEach(file => {
     fs.copyFileSync(path.join(__dirname, '..', file), path.join(distPath, file));
 });
 
