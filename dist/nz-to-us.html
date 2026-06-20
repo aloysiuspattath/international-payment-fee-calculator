@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>International Payment Fee Matrix</title>
-    <meta name="description" content="A B2B calculator that calculates exact net profit after Stripe and PayPal international payment fees.">
+    <title>Stripe & PayPal Fees: New Zealand to United States | Exact Calculator</title>
+    <meta name="description" content="Calculate the exact Stripe and PayPal cross-border fees when charging customers in United States from New Zealand. See hidden currency conversion costs.">
+    <link rel="canonical" href="https://international-payment-fee-calculator.pages.dev/nz-to-us.html">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Stripe & PayPal Fees: New Zealand to United States | Exact Calculator",
+      "description": "Calculate the exact Stripe and PayPal cross-border fees when charging customers in United States from New Zealand. See hidden currency conversion costs.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "All"
+    }
+    </script>
+    
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +29,7 @@
     <main class="container">
         <header>
             <div class="badge" id="last-updated-badge">Rates updated: Loading...</div>
-            <h1>Fee Matrix</h1>
+            <h1>Fees: New Zealand to United States</h1>
             <p>Calculate exact net profit across international borders.</p>
         </header>
 
@@ -122,11 +135,30 @@
             </div>
         </section>
 
+        
+    <section class="seo-content" style="padding: 2rem; color: var(--text-secondary); max-width: 800px; margin: 0 auto; line-height: 1.6; background: rgba(0,0,0,0.2); border-radius: 16px; margin-top: 2rem; border: 1px solid rgba(255,255,255,0.05);">
+        <h2 style="color: var(--text-primary); margin-bottom: 1rem; font-size: 1.5rem;">Understanding Cross-Border Fees from New Zealand to United States</h2>
+        <p style="margin-bottom: 1.5rem;">When processing international payments between New Zealand and United States, businesses often overlook hidden costs. Both Stripe and PayPal charge a base domestic fee, but international transactions trigger additional surcharges.</p>
+        
+        <h3 style="color: var(--text-primary); margin-bottom: 0.5rem; font-size: 1.25rem;">The Hidden Cost of Cross-Border Payments</h3>
+        <p style="margin-bottom: 1.5rem;">If your business is located in New Zealand and you charge a customer's card issued in United States, you typically face an <strong>International Card Surcharge</strong>. Furthermore, if the transaction requires currency conversion, a <strong>Currency Conversion Surcharge</strong> is applied. Our calculator breaks down these exact percentages so you know your true net profit.</p>
+        
+        <h3 style="color: var(--text-primary); margin-bottom: 0.5rem; font-size: 1.25rem;">Stripe vs. PayPal for Global B2B</h3>
+        <p>While Stripe often separates the international card fee and currency conversion fee, PayPal often bundles them into a higher flat percentage or applies differing fixed fees based on the specific corridor. Always compare the <strong>Net Received</strong> amount to determine the most cost-effective gateway for your United States customers.</p>
+    </section>
+    
+
         <footer>
             <p>Disclaimer: These are estimates based on standard public B2B pricing. Your actual rates may vary depending on enterprise agreements, specific card types, and exact live currency exchange rates.</p>
         </footer>
     </main>
 
+    
+    <script>
+        window.INITIAL_ORIGIN = 'NZ';
+        window.INITIAL_DEST = 'US';
+    </script>
+    
     <script src="script.js"></script>
 </body>
 </html>

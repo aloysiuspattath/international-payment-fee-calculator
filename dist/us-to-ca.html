@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripe & PayPal Fees: United States to Canada | Exact Calculator</title>
+    <meta name="description" content="Calculate the exact Stripe and PayPal cross-border fees when charging customers in Canada from United States. See hidden currency conversion costs.">
+    <link rel="canonical" href="https://international-payment-fee-calculator.pages.dev/us-to-ca.html">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Stripe & PayPal Fees: United States to Canada | Exact Calculator",
+      "description": "Calculate the exact Stripe and PayPal cross-border fees when charging customers in Canada from United States. See hidden currency conversion costs.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "All"
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mesh-background"></div>
+    
+    <main class="container">
+        <header>
+            <div class="badge" id="last-updated-badge">Rates updated: Loading...</div>
+            <h1>Fees: United States to Canada</h1>
+            <p>Calculate exact net profit across international borders.</p>
+        </header>
+
+        <section class="calculator-card glass-card">
+            <div class="input-group">
+                <label for="amount">Total Transaction Amount</label>
+                <div class="input-wrapper">
+                    <span class="currency-symbol" id="input-currency-symbol">$</span>
+                    <input type="number" id="amount" placeholder="1000.00" value="1000" min="0" step="0.01">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label for="origin-country">Origin Country (Your Account)</label>
+                    <select id="origin-country">
+                        <!-- Options injected by JS -->
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="destination-country">Destination Country (Customer Card)</label>
+                    <select id="destination-country">
+                        <!-- Options injected by JS -->
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="results-container">
+            <div class="result-card stripe-card glass-card">
+                <div class="card-header">
+                    <h2>Stripe</h2>
+                    <span class="fee-percentage-display" id="stripe-total-percent">--</span>
+                </div>
+                <div class="breakdown">
+                    <div class="breakdown-item">
+                        <span>Total Sent (<span class="currency-display">USD</span>)</span>
+                        <span id="stripe-total-sent" class="value">--</span>
+                    </div>
+                    <div class="breakdown-item sub-item">
+                        <span>Base Fee (<span id="stripe-base-rate"></span>%)</span>
+                        <span id="stripe-base-fee" class="value fee-value">--</span>
+                    </div>
+                    <div class="breakdown-item sub-item" id="stripe-intl-row">
+                        <span>Intl Surcharge (<span id="stripe-intl-rate"></span>%)</span>
+                        <span id="stripe-intl-fee" class="value fee-value">--</span>
+                    </div>
+                    <div class="breakdown-item sub-item" id="stripe-fx-row">
+                        <span>Currency Conv (<span id="stripe-fx-rate"></span>%)</span>
+                        <span id="stripe-fx-fee" class="value fee-value">--</span>
+                    </div>
+                    <div class="breakdown-item sub-item">
+                        <span>Fixed Fee</span>
+                        <span id="stripe-fixed-fee" class="value fee-value">--</span>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="net-result glow-purple">
+                    <span>Net Received</span>
+                    <div style="text-align: right;">
+                        <div id="stripe-net-received" class="net-value">--</div>
+                        <div id="stripe-net-received-dest" style="font-size: 0.85rem; font-weight: 500; color: var(--accent-purple); opacity: 0.8; margin-top: 4px;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result-card paypal-card glass-card">
+                <div class="card-header">
+                    <h2>PayPal</h2>
+                    <span class="fee-percentage-display" id="paypal-total-percent">--</span>
+                </div>
+                <div class="breakdown">
+                    <div class="breakdown-item">
+                        <span>Total Sent (<span class="currency-display">USD</span>)</span>
+                        <span id="paypal-total-sent" class="value">--</span>
+                    </div>
+                    <div class="breakdown-item sub-item">
+                        <span>Base Fee (<span id="paypal-base-rate"></span>%)</span>
+                        <span id="paypal-base-fee" class="value fee-value">--</span>
+                    </div>
+                    <div class="breakdown-item sub-item" id="paypal-intl-row">
+                        <span>Intl Surcharge (<span id="paypal-intl-rate"></span>%)</span>
+                        <span id="paypal-intl-fee" class="value fee-value">--</span>
+                    </div>
+                    <div class="breakdown-item sub-item" id="paypal-fx-row">
+                        <span>Currency Conv (<span id="paypal-fx-rate"></span>%)</span>
+                        <span id="paypal-fx-fee" class="value fee-value">--</span>
+                    </div>
+                    <div class="breakdown-item sub-item">
+                        <span>Fixed Fee</span>
+                        <span id="paypal-fixed-fee" class="value fee-value">--</span>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="net-result glow-blue">
+                    <span>Net Received</span>
+                    <div style="text-align: right;">
+                        <div id="paypal-net-received" class="net-value">--</div>
+                        <div id="paypal-net-received-dest" style="font-size: 0.85rem; font-weight: 500; color: var(--accent-blue); opacity: 0.8; margin-top: 4px;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    <section class="seo-content" style="padding: 2rem; color: var(--text-secondary); max-width: 800px; margin: 0 auto; line-height: 1.6; background: rgba(0,0,0,0.2); border-radius: 16px; margin-top: 2rem; border: 1px solid rgba(255,255,255,0.05);">
+        <h2 style="color: var(--text-primary); margin-bottom: 1rem; font-size: 1.5rem;">Understanding Cross-Border Fees from United States to Canada</h2>
+        <p style="margin-bottom: 1.5rem;">When processing international payments between United States and Canada, businesses often overlook hidden costs. Both Stripe and PayPal charge a base domestic fee, but international transactions trigger additional surcharges.</p>
+        
+        <h3 style="color: var(--text-primary); margin-bottom: 0.5rem; font-size: 1.25rem;">The Hidden Cost of Cross-Border Payments</h3>
+        <p style="margin-bottom: 1.5rem;">If your business is located in United States and you charge a customer's card issued in Canada, you typically face an <strong>International Card Surcharge</strong>. Furthermore, if the transaction requires currency conversion, a <strong>Currency Conversion Surcharge</strong> is applied. Our calculator breaks down these exact percentages so you know your true net profit.</p>
+        
+        <h3 style="color: var(--text-primary); margin-bottom: 0.5rem; font-size: 1.25rem;">Stripe vs. PayPal for Global B2B</h3>
+        <p>While Stripe often separates the international card fee and currency conversion fee, PayPal often bundles them into a higher flat percentage or applies differing fixed fees based on the specific corridor. Always compare the <strong>Net Received</strong> amount to determine the most cost-effective gateway for your Canada customers.</p>
+    </section>
+    
+
+        <footer>
+            <p>Disclaimer: These are estimates based on standard public B2B pricing. Your actual rates may vary depending on enterprise agreements, specific card types, and exact live currency exchange rates.</p>
+        </footer>
+    </main>
+
+    
+    <script>
+        window.INITIAL_ORIGIN = 'US';
+        window.INITIAL_DEST = 'CA';
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
