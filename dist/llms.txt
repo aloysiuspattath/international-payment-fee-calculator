@@ -1,0 +1,17 @@
+# International Payment Fee Matrix
+
+> An open-source, stateless web calculator for exact cross-border payment fees.
+
+This website computes the exact net profit after Stripe and PayPal international payment fees. It automatically fetches and applies real-time currency conversion surcharges, international card surcharges, and fixed fees.
+
+## Tech Stack & Architecture
+- **Frontend:** Pure HTML, Vanilla CSS, Vanilla JavaScript (Zero frameworks).
+- **Architecture:** Fully stateless (No backend).
+- **Data Source:** Rates and configurations are fetched from `config.json`, which is automatically updated weekly via a GitHub Actions background script.
+- **SEO Strategy:** Programmatic SEO (pSEO) engine built in Node.js generates 170 static HTML pages to target specific country-to-country corridors.
+
+## Available Corridors
+We support calculations for 169 different country-to-country corridors, including major hubs like the US, UK, Canada, Australia, Europe (Eurozone), India, Japan, Singapore, Mexico, Brazil, Hong Kong, New Zealand, and Switzerland.
+
+## Purpose
+Our goal is to bring transparency to the hidden fees that B2B and SaaS businesses face when processing international payments, allowing founders and finance teams to maximize their global profit margins.
