@@ -1,0 +1,48 @@
+{
+  "lastUpdated": "June 2026",
+  "exchangeRates": {
+    "USD": 1.0,
+    "GBP": 0.79,
+    "EUR": 0.92,
+    "CAD": 1.36,
+    "INR": 83.50,
+    "AUD": 1.50,
+    "NZD": 1.63,
+    "JPY": 150.0,
+    "SGD": 1.35,
+    "HKD": 7.82,
+    "CHF": 0.90,
+    "MXN": 17.0,
+    "BRL": 5.0
+  },
+  "stripe": {
+    "US": { "name": "United States", "currency": "USD", "currencySymbol": "$", "basePercent": 2.9, "fixedFee": 0.30, "intlCardSurcharge": 1.5, "currencyConversionSurcharge": 1.0 },
+    "UK": { "name": "United Kingdom", "currency": "GBP", "currencySymbol": "£", "basePercent": 1.5, "fixedFee": 0.20, "intlCardSurcharge": 1.5, "currencyConversionSurcharge": 2.0 },
+    "EU": { "name": "European Union", "currency": "EUR", "currencySymbol": "€", "basePercent": 1.5, "fixedFee": 0.25, "intlCardSurcharge": 1.5, "currencyConversionSurcharge": 2.0 },
+    "CA": { "name": "Canada", "currency": "CAD", "currencySymbol": "C$", "basePercent": 2.9, "fixedFee": 0.30, "intlCardSurcharge": 0.6, "currencyConversionSurcharge": 2.0 },
+    "IN": { "name": "India", "currency": "INR", "currencySymbol": "₹", "basePercent": 2.0, "fixedFee": 0.00, "intlCardSurcharge": 1.0, "currencyConversionSurcharge": 2.0 },
+    "AU": { "name": "Australia", "currency": "AUD", "currencySymbol": "A$", "basePercent": 1.75, "fixedFee": 0.30, "intlCardSurcharge": 1.75, "currencyConversionSurcharge": 2.0 },
+    "NZ": { "name": "New Zealand", "currency": "NZD", "currencySymbol": "NZ$", "basePercent": 2.9, "fixedFee": 0.30, "intlCardSurcharge": 1.5, "currencyConversionSurcharge": 2.0 },
+    "JP": { "name": "Japan", "currency": "JPY", "currencySymbol": "¥", "basePercent": 3.6, "fixedFee": 0.0, "intlCardSurcharge": 0.0, "currencyConversionSurcharge": 2.0 },
+    "SG": { "name": "Singapore", "currency": "SGD", "currencySymbol": "S$", "basePercent": 3.4, "fixedFee": 0.50, "intlCardSurcharge": 0.0, "currencyConversionSurcharge": 2.0 },
+    "HK": { "name": "Hong Kong", "currency": "HKD", "currencySymbol": "HK$", "basePercent": 3.4, "fixedFee": 2.35, "intlCardSurcharge": 0.0, "currencyConversionSurcharge": 2.0 },
+    "CH": { "name": "Switzerland", "currency": "CHF", "currencySymbol": "CHF", "basePercent": 2.9, "fixedFee": 0.30, "intlCardSurcharge": 1.5, "currencyConversionSurcharge": 2.0 },
+    "MX": { "name": "Mexico", "currency": "MXN", "currencySymbol": "$", "basePercent": 3.6, "fixedFee": 3.0, "intlCardSurcharge": 0.0, "currencyConversionSurcharge": 2.0 },
+    "BR": { "name": "Brazil", "currency": "BRL", "currencySymbol": "R$", "basePercent": 3.99, "fixedFee": 0.39, "intlCardSurcharge": 0.0, "currencyConversionSurcharge": 2.0 }
+  },
+  "paypal": {
+    "US": { "currency": "USD", "basePercent": 3.49, "fixedFee": 0.49, "intlCardSurcharge": 1.5 },
+    "UK": { "currency": "GBP", "basePercent": 2.90, "fixedFee": 0.30, "intlCardSurcharge": 1.29 },
+    "EU": { "currency": "EUR", "basePercent": 3.40, "fixedFee": 0.35, "intlCardSurcharge": 1.29 },
+    "CA": { "currency": "CAD", "basePercent": 3.49, "fixedFee": 0.49, "intlCardSurcharge": 1.5 },
+    "IN": { "currency": "INR", "basePercent": 4.40, "fixedFee": 0.00, "intlCardSurcharge": 0.0 },
+    "AU": { "currency": "AUD", "basePercent": 3.49, "fixedFee": 0.49, "intlCardSurcharge": 1.5 },
+    "NZ": { "currency": "NZD", "basePercent": 3.49, "fixedFee": 0.49, "intlCardSurcharge": 1.5 },
+    "JP": { "currency": "JPY", "basePercent": 3.60, "fixedFee": 40.0, "intlCardSurcharge": 0.0 },
+    "SG": { "currency": "SGD", "basePercent": 3.90, "fixedFee": 0.50, "intlCardSurcharge": 0.0 },
+    "HK": { "currency": "HKD", "basePercent": 3.90, "fixedFee": 2.35, "intlCardSurcharge": 0.0 },
+    "CH": { "currency": "CHF", "basePercent": 3.40, "fixedFee": 0.55, "intlCardSurcharge": 1.29 },
+    "MX": { "currency": "MXN", "basePercent": 3.95, "fixedFee": 4.0, "intlCardSurcharge": 0.0 },
+    "BR": { "currency": "BRL", "basePercent": 4.99, "fixedFee": 0.60, "intlCardSurcharge": 0.0 }
+  }
+}
