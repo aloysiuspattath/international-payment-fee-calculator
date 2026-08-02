@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "August 1, 2026 at 2:51 AM UTC",
+  "lastUpdated": "August 2, 2026 at 2:50 AM UTC",
   "exchangeRates": {
     "USD": 1,
-    "GBP": "0.75",
-    "EUR": "0.94",
-    "CAD": "1.30",
-    "INR": "84.80"
+    "GBP": "0.79",
+    "EUR": "0.93",
+    "CAD": "1.39",
+    "INR": "84.53"
   },
   "stripe": {
     "US": {
